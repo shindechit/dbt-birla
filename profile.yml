@@ -1,0 +1,13 @@
+prj01:
+  outputs:
+    dev:
+      account: knb94467
+      database: ANALYTICS
+      password: Sachin@10
+      role: analyticsengineer
+      schema: DBT_CVS
+      threads: 1
+      type: snowflake
+      user: sachin
+      warehouse: TRANSFORM_WH
+  target: dev
