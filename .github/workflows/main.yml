@@ -1,5 +1,5 @@
  
-name: deploy_dbt_old
+name: deploy_dbt
 on:
   schedule:
     - cron: '0/5 * * * *'
