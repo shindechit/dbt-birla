@@ -1,7 +1,3 @@
-github reopsitory from Actions tab
-## Paste this file content in that
-## Upload the profile.yml from local folder into repository root folder
- 
  
 name: deploy_dbt
 on:
