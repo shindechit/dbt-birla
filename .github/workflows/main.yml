@@ -1,0 +1,27 @@
+github reopsitory from Actions tab
+## Paste this file content in that
+## Upload the profile.yml from local folder into repository root folder
+ 
+ 
+name: deploy_dbt
+on:
+  schedule:
+    - cron: '0/5 * * * *'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Install dependencies
+        run: pip install dbt-snowflake --force-reinstall
+      - name: Run deps
+        run: dbt deps
+      - name: Run dbt
+        run: dbt run
+      - name: Test using dbt
+        run: dbt test
