@@ -1,7 +1,7 @@
 with cust1 as 
 (
 select
-        c_custkey as customer_id,
+        c_custkey as customer_id_new,
         c_nationkey as nation_id,
         c_name as name,
         c_address as address,
